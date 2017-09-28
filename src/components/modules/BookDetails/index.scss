@@ -1,0 +1,164 @@
+.book_details {
+  margin: 30px 0;
+  margin-left: 60px;
+  width: calc(100vw - 270px);
+
+  .details_info {
+    margin-bottom: 10px;
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #6C7C8B;
+    }
+  }
+
+  & > .main_page {
+    position: relative;
+    overflow: visible;
+    background-color: #fff;
+    margin-bottom: 40px;
+
+    .banner {
+      position: relative;
+      height: 240px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      .back {
+        position: absolute;
+        top: 20px; left: 30px;
+        color: #fff; font-size: 15px;
+        cursor: pointer;
+        opacity: 0.85;
+
+        & > span {
+          font-size: 12px;
+          transition: all .2s ease-out;
+        }
+      }
+
+      .back:hover {
+        opacity: 1;
+
+        & > span {
+          margin-left: -2px;
+          margin-right: 2px;
+        }
+      }
+
+      .title {
+        position: absolute;
+        top: 50px; left: 0;
+        height: 60px;
+        display:flex; align-items:center; justify-content: center;
+        width: calc(100% - 60px); padding: 0 30px;
+        color: #fff; font-weight: bold; font-size: 24px; line-height: 32px;
+        text-shadow: 0 0 2px rgba(0,0,0,0.3);
+      }
+
+      .authors {
+        position: absolute;
+        bottom: 105px;
+        width: 100%; text-align: center;
+        font-size: 13px; color: #fff; font-weight: normal; line-height: 12px;
+        text-shadow: 0 0 1px rgba(0,0,0,0.3);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .cover {
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      margin-left: -50px;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border: 1px solid #EBEEF3;
+      border-radius: 3px;
+      background-color: #F4F6FA;
+
+      span {
+        position: absolute;
+        top: 50px; left: 50px; margin-left: -7px; margin-top: -7px;
+        z-index: 1;
+        color: #8CA0B3;
+        font-size: 14px;
+      }
+
+      img {
+        position: absolute;
+        top: 0; left: 0;
+        z-index: 9;
+        width: 100%;
+      }
+    }
+
+    .download {
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+
+      .download_now {
+        background-color: #3EBE8C;
+        margin-right: 20px;
+        width: 120px;
+      }
+
+      .to_download {
+        color: #4DA1FF;
+        border-color: #4DA1FF;
+      }
+    }
+
+    .details {
+      width: 100%;
+
+      .line {
+        display: inline-block;
+        width: 100%;
+        margin-top: 40px;
+        border-bottom: 1px solid #EBEEF3;
+      }
+
+      .details_info {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 13vw;
+
+        & > li {
+          display: inline-block;
+          text-align: left;
+          width: 60%;
+          font-size: 14px;
+          padding: 15px 0;
+
+          .key_icon {
+            position: relative; top: 1px;
+            display: inline-block;
+            color: #34495E;
+            margin-right: 10px;
+          }
+
+          .key {
+            display: inline-block;
+            color: #34495E;
+            margin-bottom: 5px;
+            width: 140px;
+          }
+
+          .value {
+            color: #43B679;
+          }
+        }
+      }
+    }
+  }
+}

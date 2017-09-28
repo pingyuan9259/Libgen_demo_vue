@@ -1,0 +1,133 @@
+.data_table {
+  margin-bottom: 30px;
+
+  .table_info {
+    margin-left: 65px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: calc(100% - 102px);
+
+    .breadcrumb {
+      display: inline-block;
+      font-size: 13px;
+
+      & > span { display: inline-block; }
+      .first_level {
+        position: relative;
+        top: -6px;
+      }
+      .second_level {
+        max-width: 650px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #3EBE8C;
+        height: 20px;
+      }
+
+      .back {
+        position: relative;
+        top: -6px;
+        left: 10px;
+        color: #6C7C8B;
+        cursor: pointer;
+        border: 1px solid #8CA0B3;
+        border-radius: 15px;
+        padding: 2px 10px;
+        transition: all .2s linear;
+      }
+
+      .back:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .count {
+      width: 140px;
+      font-size: 13px;
+      text-align: right;
+
+      & > span {
+        color: #3EBE8C;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  & > table {
+    width: calc(100% - 90px);
+    background-color: #fff;
+    margin-left: 60px;
+    border: 1px solid #EBEEF3;
+
+    .table_head {
+      border-bottom: 1px solid #D1D9E0;
+
+      & > th {
+        color: #6C7C8B;
+        font-size: 12px;
+        text-align: left;
+        padding: 15px 10px;
+        vertical-align: middle;
+        white-space: nowrap;
+
+        & > span { cursor: pointer; }
+        .icon-spinner8 { margin-left: 5px; color: #c2cacf; }
+        .bold { color: #3EBE8C; }
+      }
+    }
+
+    .table_item {
+      border-bottom: 1px solid #EBEEF3;
+      transition: all .2s linear;
+
+      & > td {
+        color: #34495E;
+        font-size: 12px;
+        text-align: left;
+        padding: 12px 10px;
+        vertical-align: middle;
+        line-height: 20px;
+        cursor: pointer;
+      }
+
+      .search_item {
+        cursor: pointer;
+        transition: all .2s linear;
+      }
+
+      .search_item:hover {
+        color: #3EBE8C;
+      }
+    }
+
+    .table_item:nth-child(odd) {
+      background-color: #F9FCFD;
+    }
+
+    .table_item:hover {
+      background-color: #edf3f6;
+    }
+
+  }
+
+  .tip {
+    position: relative;
+    background-color: #fff;
+    left: 60px;
+    width: calc(100% - 82px);
+    height: calc(100vh - 200px);
+    border: 1px solid #EBEEF3;
+    border-top: none;
+
+    & > p {
+      position: absolute;
+      top: 48%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #8CA0B3;
+      font-size: 14px;
+    }
+  }
+}
